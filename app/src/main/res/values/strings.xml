@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aplicacao Navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_text">Olá, eu sou a Main</string>
+    <string name="fragment_1_text">Fragment #1</string>
+    <string name="textview_1_text">TextView 1 deve exibir os parâmetros que foram passados na navegação.</string>
+    <string name="fragment_2_name"># Fragment 2</string>
+    <string name="fragment_3_name">#Fragment 3</string>
+    <string name="textview_3">TextView 3 deve exibir os parâmetros que foram passados na navegação.</string>
+    <string name="textview_2">TextView 2 deve exibir os parâmetros que foram passados na navegação.</string>
+</resources>
