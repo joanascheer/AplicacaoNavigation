@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import br.com.zup.aplicacaonavigation.databinding.FragmentBlank1Binding
+
 
 class BlankFragment1 : Fragment() {
     // TODO: Rename and change types of parameters
@@ -16,8 +20,24 @@ class BlankFragment1 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val binding = DataBindingUtil.inflate<FragmentBlank1Binding>(
+            inflater,
+            R.layout.fragment_blank1, container, false
+        )
+
+        binding.btn1f1.setOnClickListener { view: View ->
+            view.findNavController()
+                .navigate(BlankFragment1Directions.actionBlankFragment1ToBlankFragment2())
+        }
+
+        binding.btn2f1.setOnClickListener { view: View ->
+            view.findNavController()
+                .navigate(BlankFragment1Directions.actionBlankFragment1ToBlankFragment3())
+        }
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank1, container, false)
+        return binding.root
+
     }
 
 }
