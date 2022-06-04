@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tv1"
             android:layout_margin="20dp"
-            android:hint="nome - string"
+            android:hint="String"
             android:inputType="text"
             />
 
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/et1f1"
             android:layout_margin="20dp"
-            android:hint="idade"
+            android:hint="Boolean"
             android:inputType="text"
             />
 

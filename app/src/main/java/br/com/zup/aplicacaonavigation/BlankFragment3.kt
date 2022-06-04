@@ -24,6 +24,9 @@ class BlankFragment3 : Fragment() {
             R.layout.fragment_blank3,container,false
         )
 
+        val args = BlankFragment3Args.fromBundle(requireArguments())
+        binding.tv3.text = "Recebendo ${args.float}"
+
         binding.btn1f3.setOnClickListener { view: View ->
             view.findNavController()
                 .navigate(BlankFragment3Directions.actionBlankFragment3ToBlankFragment1())
